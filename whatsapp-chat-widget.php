@@ -5,7 +5,7 @@ Plugin URI: #
 Description: WhatsApp chat widget for WordPress.
 Version: 1.0
 Author: Serkan Kısacık
-Author URI: #
+Author URI: https://doseryazilim.com/tr
 */
 
 function whatsapp_chat_widget_enqueue_scripts()
