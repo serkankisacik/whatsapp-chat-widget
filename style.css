@@ -9,7 +9,6 @@
 
 #whatsapp-chat {
     box-sizing: border-box !important;
-
     outline: none !important;
     position: fixed;
     width: 350px;
@@ -25,7 +24,6 @@
 }
 
 a.blantershow-chat {
-    /*   background: #009688; */
     background: #fff;
     color: #404040;
     position: fixed;
@@ -47,8 +45,6 @@ a.blantershow-chat svg {
 }
 
 .header-chat {
-    /*   background: linear-gradient(to right top, #6f96f3, #164ed2); */
-    background: #009688;
     background: #095e54;
     color: #fff;
     padding: 20px;
@@ -114,13 +110,6 @@ span.my-number {
     display: none;
 }
 
-/* .blanter-msg {
-  color: #444;
-  padding: 20px;
-  font-size: 12.5px;
-  text-align: center;
-  border-top: 1px solid #ddd;
-} */
 textarea#chat-input {
     border: none;
     font-family: "Arial", sans-serif;
@@ -176,42 +165,6 @@ a.close-chat {
     right: 15px;
     color: #fff;
     font-size: 30px;
-}
-
-@keyframes ZpjSY {
-    0% {
-        background-color: rgb(182, 181, 186);
-    }
-    15% {
-        background-color: rgb(17, 17, 17);
-    }
-    25% {
-        background-color: rgb(182, 181, 186);
-    }
-}
-
-@keyframes hPhMsj {
-    15% {
-        background-color: rgb(182, 181, 186);
-    }
-    25% {
-        background-color: rgb(17, 17, 17);
-    }
-    35% {
-        background-color: rgb(182, 181, 186);
-    }
-}
-
-@keyframes iUMejp {
-    25% {
-        background-color: rgb(182, 181, 186);
-    }
-    35% {
-        background-color: rgb(17, 17, 17);
-    }
-    45% {
-        background-color: rgb(182, 181, 186);
-    }
 }
 
 @keyframes showhide {
@@ -290,7 +243,6 @@ a.close-chat {
     z-index: 0;
     opacity: 0.08;
     background-image: url("https://elfsight.com/assets/chats/patterns/whatsapp.png");
-/ / background-image: url(https://res.cloudinary.com/eventbree/image/upload/v1575782560/Widgets/whatsappbg_opt.jpg);
 }
 
 .dAbFpq {
@@ -304,9 +256,7 @@ a.close-chat {
     height: 32px;
     border-radius: 16px;
     display: flex;
-    -moz-box-pack: center;
     justify-content: center;
-    -moz-box-align: center;
     align-items: center;
     margin-left: 10px;
     opacity: 0;
@@ -383,13 +333,6 @@ a.close-chat {
     font-weight: 700;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.4);
-}
-
-.iSpIQi {
-    font-size: 14px;
-    line-height: 19px;
-    margin-top: 4px;
-    color: rgb(17, 17, 17);
 }
 
 .iSpIQi {
