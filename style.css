@@ -138,6 +138,7 @@ a#send-it {
     padding: 10px 10px 0;
     background: #eee;
     border-radius: 10px;
+}
 
 svg {
     fill: #a6a6a6;
@@ -149,6 +150,8 @@ svg {
     background: transparent;
     padding: 30px;
     text-align: center;
+}
+
 span {
     background: #e2e2e2;
     color: #333;
@@ -274,8 +277,8 @@ a.close-chat {
     padding: 20px 20px 20px 10px;
     background-color: rgb(230, 221, 212);
     position: relative;
+}
 
-&
 ::before {
     display: block;
     position: absolute;
@@ -288,8 +291,6 @@ a.close-chat {
     opacity: 0.08;
     background-image: url("https://elfsight.com/assets/chats/patterns/whatsapp.png");
 / / background-image: url(https://res.cloudinary.com/eventbree/image/upload/v1575782560/Widgets/whatsappbg_opt.jpg);
-}
-
 }
 
 .dAbFpq {
@@ -362,8 +363,8 @@ a.close-chat {
     margin-top: 4px;
     margin-left: -54px;
     max-width: calc(100% - 66px);
+}
 
-&
 ::before {
     position: absolute;
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAMAAADp2asXAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACQUExURUxpccPDw9ra2m9vbwAAAAAAADExMf///wAAABoaGk9PT7q6uqurqwsLCycnJz4+PtDQ0JycnIyMjPf3915eXvz8/E9PT/39/RMTE4CAgAAAAJqamv////////r6+u/v7yUlJeXl5f///5ycnOXl5XNzc/Hx8f///xUVFf///+zs7P///+bm5gAAAM7Ozv///2fVensAAAAvdFJOUwCow1cBCCnqAhNAnY0WIDW2f2/hSeo99g1lBYT87vDXG8/6d8oL4sgM5szrkgl660OiZwAAAHRJREFUKM/ty7cSggAABNFVUQFzwizmjPz/39k4YuFWtm55bw7eHR6ny63+alnswT3/rIDzUSC7CrAziPYCJCsB+gbVkgDtVIDh+DsE9OTBpCtAbSBAZSEQNgWIygJ0RgJMDWYNAdYbAeKtAHODlkHIv997AkLqIVOXVU84AAAAAElFTkSuQmCC");
@@ -376,6 +377,7 @@ a.close-chat {
     width: 12px;
     height: 19px;
 }
+
 .bMIBDo {
     font-size: 13px;
     font-weight: 700;
