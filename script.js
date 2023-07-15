@@ -12,7 +12,7 @@ $(document).on("click", "#send-it", function () {
             )
         )
             var d = "whatsapp://send";
-        var g = d + "?phone=+905301094474" + e + f;
+        var g = d + "?phone=+905078989699" + e + f;
         window.open(g, "_blank");
     }
 }),

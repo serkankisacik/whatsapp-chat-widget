@@ -24,7 +24,7 @@ function whatsapp_chat_widget_output()
                 <div class='info-avatar'><img
                             src='https://meskenakademi.com/wp-content/uploads/2022/09/cropped-PNG-MESKEN-1-180x180.webp'/>
                 </div>
-                <p><span class="whatsapp-name">Mesken</span><br><small>Genellikle bir saat içinde yanıt verir</small>
+                <p><span class="whatsapp-name">Site Başlığı</span><br><small>Genellikle bir saat içinde yanıt verir</small>
                 </p>
 
             </div>
@@ -48,8 +48,8 @@ function whatsapp_chat_widget_output()
                         </div>
                     </div>
                     <div style="opacity: 1;" class="WhatsappChat__Message-sc-1wqac52-4 kAZgZq">
-                        <div class="WhatsappChat__Author-sc-1wqac52-3 bMIBDo">Mesken Destek</div>
-                        <div class="WhatsappChat__Text-sc-1wqac52-2 iSpIQi">SelammunAleyküm 👋<br><br>Size nasıl yardım
+                        <div class="WhatsappChat__Author-sc-1wqac52-3 bMIBDo">Site Başlığı Destek</div>
+                        <div class="WhatsappChat__Text-sc-1wqac52-2 iSpIQi">Merhaba 👋<br><br>Size nasıl yardım
                             edebilirim?
                         </div>
                     </div>
