@@ -23,7 +23,7 @@ Sohbet widget'ını özelleştirmek için "style.css" ve "script.js" dosyaların
 
 ## Destek
 
-Herhangi bir sorunuz veya geri bildiriminiz varsa, lütfen [destek sayfamızı](https://www.doseryazilim.com/contact) ziyaret edin veya bize serkan@doseryazilim.com adresinden ulaşın.
+Herhangi bir sorunuz veya geri bildiriminiz varsa, lütfen [destek sayfamızı](https://www.serra.org.tr) ziyaret edin veya bize serra.org.tr@gmail.com adresinden ulaşın.
 
 ## Katkıda Bulunma
 
