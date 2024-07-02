@@ -4,66 +4,66 @@ Plugin Name: WhatsApp Chat Widget
 Plugin URI: #
 Description: WhatsApp chat widget for WordPress.
 Version: 1.0.1
-Author: SRtech Serra ðŸ–¤
+Author: SRtech Serra 🖤
 Author URI: https://serra.org.tr
 */
 
-function whatsapp_chat_widget_enqueue_scripts()
+function serra_whatsapp_chat_widget_enqueue_scripts()
 {
     wp_enqueue_style('whatsapp-chat-widget-style', plugins_url('style.css', __FILE__));
     wp_enqueue_script('whatsapp-chat-widget-script', plugins_url('script.js', __FILE__), array('jquery'), '1.0', true);
 }
 
-function whatsapp_chat_widget_output()
+function serra_whatsapp_chat_widget_output()
 {
     ob_start();
     ?>
-    <div id='whatsapp-chat' class='hide'>
-        <div class='header-chat'>
-            <div class='head-home'>
+    <div id='serra-whatsapp-chat' class='serra-hide'>
+        <div class='serra-header-chat'>
+            <div class='serra-head-home'>
                 <?php
                 $site_title = get_bloginfo('name');
                 $site_icon_url = get_site_icon_url();
                 ?>
 
-                <div class='info-avatar'><img
+                <div class='serra-info-avatar'><img
                             src='<?php echo $site_icon_url;?>'/>
                 </div>
-                <p><span class="whatsapp-name"><?php echo $site_title;?></span><br><small>Genellikle bir saat içinde yanıt verir</small>
+                <p><span class="serra-whatsapp-name"><?php echo $site_title;?></span><br><small>Genellikle bir saat içinde yanıt verir</small>
                 </p>
 
             </div>
-            <div class='get-new hide'>
-                <div id='get-label'></div>
-                <div id='get-nama'></div>
+            <div class='serra-get-new serra-hide'>
+                <div id='serra-get-label'></div>
+                <div id='serra-get-nama'></div>
             </div>
         </div>
-        <div class='home-chat'>
+        <div class='serra-home-chat'>
 
         </div>
-        <div class='start-chat'>
+        <div class='serra-start-chat'>
             <div pattern="https://elfsight.com/assets/chats/patterns/whatsapp.png"
-                 class="WhatsappChat__Component-sc-1wqac52-0 whatsapp-chat-body">
-                <div class="WhatsappChat__MessageContainer-sc-1wqac52-1 dAbFpq">
-                    <div style="opacity: 0;" class="WhatsappDots__Component-pks5bf-0 eJJEeC">
-                        <div class="WhatsappDots__ComponentInner-pks5bf-1 hFENyl">
-                            <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotOne-pks5bf-3 ixsrax"></div>
-                            <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotTwo-pks5bf-4 dRvxoz"></div>
-                            <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotThree-pks5bf-5 kXBtNt"></div>
+                 class="WhatsappChat__Component-sc-1wqac52-0 serra-whatsapp-chat-body">
+                <div class="WhatsappChat__MessageContainer-sc-1wqac52-1 serra-dAbFpq">
+                    <div style="opacity: 0;" class="WhatsappDots__Component-pks5bf-0 serra-eJJEeC">
+                        <div class="WhatsappDots__ComponentInner-pks5bf-1 serra-hFENyl">
+                            <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotOne-pks5bf-3 serra-ixsrax"></div>
+                            <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotTwo-pks5bf-4 serra-dRvxoz"></div>
+                            <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotThree-pks5bf-5 serra-kXBtNt"></div>
                         </div>
                     </div>
-                    <div style="opacity: 1;" class="WhatsappChat__Message-sc-1wqac52-4 kAZgZq">
-                        <div class="WhatsappChat__Author-sc-1wqac52-3 bMIBDo"><?php echo $site_title;?> Destek</div>
-                        <div class="WhatsappChat__Text-sc-1wqac52-2 iSpIQi">Merhaba 👋<br><br>Size nasıl yardım
+                    <div style="opacity: 1;" class="WhatsappChat__Message-sc-1wqac52-4 serra-kAZgZq">
+                        <div class="WhatsappChat__Author-sc-1wqac52-3 serra-bMIBDo"><?php echo $site_title;?> Destek</div>
+                        <div class="WhatsappChat__Text-sc-1wqac52-2 serra-iSpIQi">Merhaba 👋<br><br>Size nasıl yardım
                             edebilirim?
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class='blanter-msg'>
-                <textarea id='chat-input' placeholder='Bir mesaj yazın!' maxlength='120' row='1'></textarea>
-                <a href='javascript:void;' id='send-it'>
+            <div class='serra-blanter-msg'>
+                <textarea id='serra-chat-input' placeholder='Bir mesaj yazın!' maxlength='120' row='1'></textarea>
+                <a href='javascript:void;' id='serra-send-it'>
                     <svg viewBox="0 0 448 448">
                         <path d="M.213 32L0 181.333 320 224 0 266.667.213 416 448 224z"/>
                     </svg>
@@ -71,10 +71,10 @@ function whatsapp_chat_widget_output()
 
             </div>
         </div>
-        <div id='get-number'></div>
-        <a class='close-chat' href='javascript:void'>×</a>
+        <div id='serra-get-number'></div>
+        <a class='serra-close-chat' href='javascript:void'>×</a>
     </div>
-    <a class='blantershow-chat' href='javascript:void' title='Show Chat'>
+    <a class='serra-blantershow-chat' href='javascript:void' title='Show Chat'>
         <svg width="20" viewBox="0 0 24 24">
             <defs/>
             <path fill="#eceff1"
@@ -90,5 +90,5 @@ function whatsapp_chat_widget_output()
     return $output;
 }
 
-add_action('wp_enqueue_scripts', 'whatsapp_chat_widget_enqueue_scripts');
-add_shortcode('whatsapp_chat_widget', 'whatsapp_chat_widget_output');
+add_action('wp_enqueue_scripts', 'serra_whatsapp_chat_widget_enqueue_scripts');
+add_shortcode('whatsapp_chat_widget', 'serra_whatsapp_chat_widget_output');
