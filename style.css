@@ -351,3 +351,15 @@ a.serra-close-chat {
     margin-right: -8px;
     margin-bottom: -4px;
 }
+
+.serra-right {
+    bottom: 90px;
+    right: 30px;
+    left: auto;
+}
+
+.serra-left {
+    bottom: 90px;
+    right: auto;
+    left: 30px;
+}
