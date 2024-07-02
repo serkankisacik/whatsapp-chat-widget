@@ -41,9 +41,9 @@ function serra_whatsapp_chat_widget_settings_page() {
                 <tr valign="top">
                     <th scope="row">Widget Konumu</th>
                     <td>
-                        <select name="serra_whatsapp_chat_position">
-                            <option value="right" <?php selected(get_option('serra_whatsapp_chat_position'), 'right'); ?>>Sağ</option>
-                            <option value="left" <?php selected(get_option('serra_whatsapp_chat_position'), 'left'); ?>>Sol</option>
+                        <select name="serra_whatsapp_widget_position">
+                            <option value="right" <?php selected(get_option('serra_whatsapp_widget_position'), 'right'); ?>>Sağ</option>
+                            <option value="left" <?php selected(get_option('serra_whatsapp_widget_position'), 'left'); ?>>Sol</option>
                         </select>
                     </td>
                 </tr>
@@ -56,7 +56,7 @@ function serra_whatsapp_chat_widget_settings_page() {
 
 function serra_whatsapp_chat_widget_settings() {
     register_setting('serra-whatsapp-chat-settings-group', 'serra_whatsapp_phone_number');
-    register_setting('serra-whatsapp-chat-settings-group', 'serra_whatsapp_chat_position');
+    register_setting('serra-whatsapp-chat-settings-group', 'serra_whatsapp_widget_position');
 }
 
 add_action('admin_menu', 'serra_whatsapp_chat_widget_menu');
@@ -112,7 +112,7 @@ function serra_whatsapp_chat_widget_output() {
             </div>
             <div class='serra-blanter-msg'>
                 <textarea id='serra-chat-input' placeholder='Bir mesaj yazın!' maxlength='120' row='1'></textarea>
-                <a href='https://wa.me/<?php echo $phone_number; ?>' id='serra-send-it'>
+                <a href='javascript:void;' id='serra-send-it'>
                     <svg viewBox="0 0 448 448">
                         <path d="M.213 32L0 181.333 320 224 0 266.667.213 416 448 224z"/>
                     </svg>
