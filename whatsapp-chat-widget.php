@@ -3,9 +3,9 @@
 Plugin Name: WhatsApp Chat Widget
 Plugin URI: #
 Description: WhatsApp chat widget for WordPress.
-Version: 1.0
-Author: Serkan Kısacık
-Author URI: https://doseryazilim.com/tr
+Version: 1.0.1
+Author: SRtech Serra ðŸ–¤
+Author URI: https://serra.org.tr
 */
 
 function whatsapp_chat_widget_enqueue_scripts()
