@@ -1,8 +1,8 @@
-$(document).on("click", "#send-it", function () {
-    var a = document.getElementById("chat-input");
+$(document).on("click", "#serra-send-it", function () {
+    var a = document.getElementById("serra-chat-input");
     if ("" != a.value) {
-        var b = $("#get-number").text(),
-            c = document.getElementById("chat-input").value,
+        var b = $("#serra-get-number").text(),
+            c = document.getElementById("serra-chat-input").value,
             d = "https://web.whatsapp.com/send",
             e = b,
             f = "&text=" + c;
@@ -12,28 +12,31 @@ $(document).on("click", "#send-it", function () {
             )
         )
             var d = "whatsapp://send";
-        var g = d + "?phone=+905078989699" + e + f;
+        var g = d + "?phone=" + phone_number + e + f;
         window.open(g, "_blank");
     }
 }),
-    $(document).on("click", ".informasi", function () {
-        (document.getElementById("get-number").innerHTML = $(this)
-            .children(".my-number")
+    $(document).on("click", ".serra-informasi", function () {
+        (document.getElementById("serra-get-number").innerHTML = $(this)
+            .children(".serra-my-number")
             .text()),
-            $(".start-chat,.get-new").addClass("show").removeClass("hide"),
-            $(".home-chat,.head-home").addClass("hide").removeClass("show"),
-            (document.getElementById("get-nama").innerHTML = $(this)
-                .children(".info-chat")
-                .children(".chat-nama")
+            $(".serra-start-chat,.serra-get-new").addClass("serra-show").removeClass("serra-hide"),
+            $(".serra-home-chat,.serra-head-home").addClass("serra-hide").removeClass("serra-show"),
+            (document.getElementById("serra-get-nama").innerHTML = $(this)
+                .children(".serra-info-chat")
+                .children(".serra-chat-nama")
                 .text()),
-            (document.getElementById("get-label").innerHTML = $(this)
-                .children(".info-chat")
-                .children(".chat-label")
+            (document.getElementById("serra-get-label").innerHTML = $(this)
+                .children(".serra-info-chat")
+                .children(".serra-chat-label")
                 .text());
     }),
-    $(document).on("click", ".close-chat", function () {
-        $("#whatsapp-chat").addClass("hide").removeClass("show");
+    $(document).on("click", ".serra-close-chat", function () {
+        $("#serra-whatsapp-chat").addClass("serra-hide").removeClass("serra-show");
     }),
-    $(document).on("click", ".blantershow-chat", function () {
-        $("#whatsapp-chat").addClass("show").removeClass("hide");
+    $(document).on("click", ".serra-blantershow-chat", function () {
+        $("#serra-whatsapp-chat").addClass("serra-show").removeClass("serra-hide");
     });
+
+// Phone number should be dynamically set from PHP
+var phone_number = "<?php echo esc_attr(get_option('serra_whatsapp_phone_number')); ?>";
